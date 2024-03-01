@@ -13,13 +13,14 @@
 }
 /* font-family: 'PT Sans', sans-serif; */
 
-*/
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: var(--Dark_Blue);
+
+    margin-bottom: 30px;
 }
 
 #header_logo {
@@ -48,6 +49,8 @@ main {
 main>section:nth-child(1) {
     display: grid;
     gap: 20px;
+
+    font-weight: bold;
 }
 
 /* first section box with the app store button */
@@ -56,6 +59,7 @@ main>section:nth-child(1) {
     border-radius: 25px;
     padding: 3%;
     padding-left: 5%;
+    padding-bottom: 0px;
     background-color: var(--Light_Blue);
 }
 
@@ -64,7 +68,7 @@ main>section:nth-child(1) {
 }
 
 .get_demo_description {
-    color: var(--Dark_Purple);
+    color: rgb(78, 109, 180);
     text-align: start;
 }
 
@@ -81,6 +85,7 @@ main>section:nth-child(1) {
     width: fit-content;
     padding: 2% 7%;
     margin-left: 4%;
+    margin-bottom: 2%;
     background-color: var(--Dark_Blue);
 }
 
@@ -90,12 +95,13 @@ main>section:nth-child(1) {
     height: 1em;
 }
 
-
+/* colorful boxes in section 1 */
 .perks {
     display: grid;
     justify-items: center;
     text-align: center;
     border-radius: 25px;
+    padding: 5%;
 }
 
 .perks_image{
@@ -104,6 +110,14 @@ main>section:nth-child(1) {
 
 .perks:nth-child(2) {
     background-color: var(--Light_Green);
+    >.perks_title{
+        color: var(--Dark_Green);
+    }
+
+    >.perks_description{
+        color: rgb(from var(--Dark_Green) 0 5 0);
+        
+    }
 }
 
 .perks:nth-child(3){
