@@ -1,0 +1,119 @@
+:root{
+    --Dark_Blue: #0084FF;
+    --Light_Blue: #B8DDFF;
+    --Dark_Green: #54C788;
+    --Light_Green: #CAF0DB;
+    --Dark_Red: #FF8A8A;
+    --Light_Red: #FFD2D2;
+    --Dark_Yellow: #FFC166;
+    --Light_Yellow: #FFE7C4;
+    --Dark_Purple: #9693E6;
+    --Light_Purple: #D5D4F5;
+    --Dark_Grey: #333333;
+}
+/* font-family: 'PT Sans', sans-serif; */
+
+*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--Dark_Blue);
+}
+
+#header_logo {
+    padding: 5px;
+}
+
+#header_menu {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    justify-self: end;
+}
+
+body {
+    display: grid;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main {
+    display: grid;
+}
+
+/* first section of page with the colorful boxes */
+main>section:nth-child(1) {
+    display: grid;
+    gap: 20px;
+}
+
+/* first section box with the app store button */
+.get_demo {
+    display: grid;
+    border-radius: 25px;
+    padding: 3%;
+    padding-left: 5%;
+    background-color: var(--Light_Blue);
+}
+
+.get_demo_title {
+    color: var(--Dark_Blue);
+}
+
+.get_demo_description {
+    color: var(--Dark_Purple);
+    text-align: start;
+}
+
+.get_demo_button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50ch;
+
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    width: fit-content;
+    padding: 2% 7%;
+    margin-left: 4%;
+    background-color: var(--Dark_Blue);
+}
+
+.get_demo_button>img{
+    padding-right: 5px;
+    padding-bottom: 2px;
+    height: 1em;
+}
+
+
+.perks {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.perks_image{
+    height: 60px;
+}
+
+.perks:nth-child(2) {
+    background-color: var(--Light_Green);
+}
+
+.perks:nth-child(3){
+    background-color: var(--Light_Red);
+}
+
+.perks:nth-child(4){
+    background-color: var(--Light_Yellow);
+}
+
+.perks:nth-child(5){
+    background-color: var(--Light_Purple);
+}
