@@ -50,7 +50,7 @@ main>section{
 }
 
 /* first section of page with the colorful boxes */
-main>section:nth-child(1) {
+#perks_section {
     display: grid;
     gap: 20px;
 
@@ -170,7 +170,7 @@ main>section:nth-child(1) {
 }
 
 /* second section with "strategic planning" */
-main>section:nth-child(2){
+#strategic_planning_section{
     background-color: var(--Dark_Purple);
     display: grid;
     padding: auto;
@@ -182,6 +182,8 @@ main>section:nth-child(2){
     display: grid;
     color: white;
     margin-bottom: 20px;
+
+    max-width: 100%;
 }
 
 .strategic_planning_title{
@@ -200,6 +202,9 @@ main>section:nth-child(2){
 
 .strategic_planning_image{
     margin: 5%;
+    max-width: 100%;
+    height: auto;
+    /* object-fit: scale-down; */
 
     @media only screen and (min-width: 768px){
         width: 600px;
@@ -213,6 +218,7 @@ main>section:nth-child(2){
     display: grid;
     text-align: center;
     justify-items: center;
+
 
     padding: 5%;
 }
@@ -232,6 +238,11 @@ main>section:nth-child(2){
 }
 
 .app_development_image{
+
+    max-width: 100%;
+    height: auto;
+    /* object-fit: scale-down; */
+
     @media only screen and (min-width: 768px){
         width: 500px;
     }
@@ -252,7 +263,7 @@ main>section:nth-child(2){
 }
 
 /* third section for testimonials */
-main>section:nth-child(3) {
+#testimonials_section {
     display: grid;
 
     gap: 30px;
@@ -321,4 +332,58 @@ main>section:nth-child(3) {
     text-transform: uppercase;
     margin-top: 0;
     color: var(--Dark_Grey);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* 4th section Benefits of working with us purple background */
+#benefits_section {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    background-color: var(--Dark_Purple);
+
+    padding-bottom: 50px;
+
+    >h1{
+        color: white;
+        font-size: 35px;
+    }
+}
+
+/* is this a good format or not? */
+.benefits_container{
+    background-color: var(--Light_Purple);
+    color: var(--Dark_Purple);
+    padding: 16px;
+    border-radius: 20px;
+
+    >.benefits_number{
+        font-size: 50px;
+        margin: 5px;
+    }
+
+    >.benefits_description{
+        font-size: 18px;
+        filter: grayscale(0.8);
+    }
+
+    >.benefits_button{
+            
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 50ch;
+
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+
+        width: fit-content;
+        font-size: 15px;
+        padding: 3% 8%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        background-color: var(--Dark_Purple);
+    }
 }
