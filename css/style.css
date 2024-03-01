@@ -250,3 +250,75 @@ main>section:nth-child(2){
 
     justify-self: center;
 }
+
+/* third section for testimonials */
+main>section:nth-child(3) {
+    display: grid;
+
+    gap: 30px;
+}
+
+/* first block as header */
+.testimonials_header {
+    text-align: center;
+    padding: 10px 50px;
+    
+}
+
+.testimonials_title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--Dark_Grey)
+}
+
+.testimonials_message {
+    color: var(--Dark_Purple);
+    font-size: 30px
+}
+
+.testimonials_description {
+    font-size: 20px;
+}
+
+/* the three blocks of quotes */
+.testimonials_container {
+    display: grid;
+    justify-items: center;
+
+    padding: 7%;
+}
+
+.testimonials_container:nth-child(2) {
+    background-color: var(--Light_Red);
+    border-radius: 25px;
+}
+
+.testimonials_container:nth-child(3) {
+    background-color: var(--Light_Yellow);
+    border-radius: 25px;
+}
+
+.testimonials_container:nth-child(4) {
+    background-color: var(--Light_Green);
+    border-radius: 25px;
+}
+
+.testimonials_image{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 150px;
+}
+
+.testimonials_quote {
+    color: var(--Dark_Grey);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.testimonials_name {
+    text-transform: uppercase;
+    margin-top: 0;
+    color: var(--Dark_Grey);
+}
