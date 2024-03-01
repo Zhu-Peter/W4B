@@ -387,3 +387,79 @@ main>section{
         background-color: var(--Dark_Purple);
     }
 }
+
+/* the 5th section about us and boss quote and linkdin */
+#boss_section {
+    display: grid;
+}
+
+.about_container{
+    display: grid;
+    padding: 3%;
+    margin-bottom: 30px;
+}
+
+.about_title{
+    color: var(--Dark_Purple);
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+.about_description{
+    color: var(--Dark_Grey);
+    font-size: 21px;
+    font-weight: lighter;
+    max-width: 90%;
+}
+
+/* 2nd part */
+.boss_container{
+    display: grid;
+    padding: 3%;
+}
+
+.boss_image_container{
+    position: relative;
+}
+
+.boss_image {
+    border-radius: 100px;
+}
+
+.boss_quote_symbol{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: -40px;
+    left: 140px;
+    font-size: 200px;
+    font-family: fantasy;
+    font-weight: lighter;
+    color: var(--Dark_Purple);
+}
+
+.boss_description{
+    color: var(--Dark_Purple);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.boss_button{
+    border: none;
+    border-radius: 6px;
+    padding: 2% 4%;
+    width: fit-content;
+    background-color: var(--Dark_Purple);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+
+    >img{
+        padding-right: 7px;
+    }
+}
