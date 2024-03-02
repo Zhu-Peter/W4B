@@ -93,6 +93,7 @@ main>section{
 
 .get_demo_button_container{
     width: max-content;
+    text-decoration: none;
     :hover{
         cursor: pointer;
     }
@@ -130,10 +131,21 @@ main>section{
     text-align: center;
     border-radius: 25px;
     padding: 5%;
+
+    /* desktop */
+    @media only screen and (min-width:992px){
+        padding: 5% 5% 15% 5%;
+    }
 }
 
 .perks_image{
     height: 60px;
+
+    /* desktop */
+    @media only screen and (min-width:992px){
+        height: 100px;
+        margin-bottom: 25pxpx;
+    }
 }
 
 .perks_description{
