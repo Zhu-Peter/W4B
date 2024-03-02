@@ -526,7 +526,11 @@ footer{
 }
 
 .footer_link{
-    width: max-content+2px;
+    width: max-content;
+    justify-self: center;
+    :hover{
+        cursor: pointer;
+    }
 }
 
 .footer_button{
