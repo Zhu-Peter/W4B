@@ -54,7 +54,14 @@ main>section{
     display: grid;
     gap: 20px;
 
-    /* font-weight: bold; */
+    /* tablets */
+    @media only screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        >.get_demo{grid-column: span 2;}
+        >.perks:nth-child(2) {display: inline;}
+    }
 }
 
 /* first section box with the app store button */
@@ -232,6 +239,7 @@ main>section{
 
 .app_development_description{
     font-style: italic;
+    font-size: 20px;
     color: var(--Dark_Grey);
 
     margin-bottom: 20px;
@@ -285,7 +293,7 @@ main>section{
 
 .testimonials_message {
     color: var(--Dark_Purple);
-    font-size: 30px
+    font-size: 40px
 }
 
 .testimonials_description {
@@ -297,7 +305,15 @@ main>section{
     display: grid;
     justify-items: center;
 
-    padding: 7%;
+    padding: 40px;
+
+    /* tablet */
+    @media only screen and (min-width:768px){
+        grid-auto-flow: column;
+        justify-items: start;
+        column-gap: 30px;
+        >.testimonials_image{grid-row: span 2;}
+    }
 }
 
 .testimonials_container:nth-child(2) {
@@ -349,6 +365,13 @@ main>section{
         color: white;
         font-size: 35px;
     }
+
+    
+    /* tablet */
+    @media only screen and (min-width:768px){
+        >h1{grid-column: span 2; font-size: 50px;}
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* is this a good format or not? */
@@ -366,6 +389,8 @@ main>section{
     >.benefits_description{
         font-size: 18px;
         filter: grayscale(0.8);
+        margin: 5px;
+        margin-bottom: 35px;
     }
 
     >.benefits_button{
@@ -391,6 +416,14 @@ main>section{
 /* the 5th section about us and boss quote and linkdin */
 #boss_section {
     display: grid;
+
+    
+    /* tablet */
+    @media only screen and (min-width:768px){
+        grid-template-columns: 2fr 1fr;
+
+        >.boss_container{display: inline;}
+    }
 }
 
 .about_container{
@@ -402,6 +435,7 @@ main>section{
 .about_title{
     color: var(--Dark_Purple);
     font-size: 40px;
+    margin-top: 0;
     margin-bottom: 2%;
 }
 
@@ -440,8 +474,9 @@ main>section{
 
 .boss_description{
     color: var(--Dark_Purple);
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
+    margin: 5px 10px;
 }
 
 .boss_button{
@@ -514,6 +549,7 @@ footer{
         color: white;
         font-size: 21px;
         font-weight: normal;
+        margin: 20px 15%;
     }
 
     >p:nth-of-type(2){
