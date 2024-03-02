@@ -72,6 +72,14 @@ main>section{
     padding-left: 5%;
     padding-bottom: 0px;
     background-color: var(--Light_Blue);
+
+    /* desktop */
+    @media only screen and (min-width:992px){
+        grid-template-columns: auto auto;
+        >.get_demo_image{
+            height: 300px;
+        }
+    }
 }
 
 .get_demo_title {
@@ -81,6 +89,13 @@ main>section{
 .get_demo_description {
     color: rgb(78, 109, 180);
     text-align: start;
+}
+
+.get_demo_button_container{
+    width: max-content;
+    :hover{
+        cursor: pointer;
+    }
 }
 
 .get_demo_button {
@@ -94,10 +109,12 @@ main>section{
     align-items: center;
 
     width: fit-content;
-    padding: 3% 8%;
-    margin-left: 4%;
+    padding: 1vh 3vw;
+    margin-left: 0.4vw;
     margin-bottom: 2%;
     background-color: var(--Dark_Blue);
+
+
 }
 
 .get_demo_button>img{
@@ -182,6 +199,16 @@ main>section{
     display: grid;
     padding: auto;
     padding: 8%;
+
+    /* desktop */
+    @media only screen and (min-width:992px){
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: end;
+        >.strategic_planning{width: 400px; justify-self: end; padding-bottom: 20px;
+            >.strategic_planning_title{font-size: 36px; margin-top: 110px;}}
+        >.app_development{width: 400px;}
+    }
 }
 
 /* strategic planning section */
@@ -275,6 +302,11 @@ main>section{
     display: grid;
 
     gap: 30px;
+
+    /* desktop */
+    @media only screen and (min-width:992px){
+        padding: 0 20vw;
+    }
 }
 
 /* first block as header */
@@ -314,6 +346,7 @@ main>section{
         column-gap: 30px;
         >.testimonials_image{grid-row: span 2;}
     }
+    
 }
 
 .testimonials_container:nth-child(2) {
@@ -372,6 +405,12 @@ main>section{
         >h1{grid-column: span 2; font-size: 50px;}
         grid-template-columns: 1fr 1fr;
     }
+
+    /* desktop */
+    @media only screen and (min-width:768px){
+        >h1{grid-column: span 3; font-size: 50px;}
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* is this a good format or not? */
@@ -410,6 +449,10 @@ main>section{
         margin-left: 2%;
         margin-bottom: 2%;
         background-color: var(--Dark_Purple);
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -525,39 +568,46 @@ footer{
         margin: 5px;
     }
 
-    >h1:nth-child(1){
-        color: var(--Light_Purple);
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: normal;
-    }
+}
 
-    >h1:nth-child(2){
+.footer_get_started{
+    color: var(--Light_Purple);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer_pricing{
+    color: white;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.footer_its_free{
+    color: var(--Dark_Yellow);
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.footer_description{
+    color: white;
+    font-size: 21px;
+    font-weight: normal;
+    margin: 20px 15%;
+
+    /* desktop */
+    @media only screen and (min-width:992px){
+        width: 600px;
+        justify-self: center;
+    }
+}
+
+.footer_copyright{
+    color: white;
+    text-decoration: none;
+    >a{
         color: white;
-        font-size: 38px;
-        font-weight: normal;
-    }
-
-    >h1:nth-child(3){
-        color: var(--Dark_Yellow);
-        text-transform: uppercase;
-        font-size: 68px;
-        font-weight: bold;
-    }
-
-    >p:first-of-type{
-        color: white;
-        font-size: 21px;
-        font-weight: normal;
-        margin: 20px 15%;
-    }
-
-    >p:nth-of-type(2){
-        color: white;
-        text-decoration: none;
-        >a{
-            color: white;
-        }
     }
 }
 
